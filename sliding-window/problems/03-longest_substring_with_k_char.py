@@ -5,7 +5,25 @@
 # Explanation: The longest substring with no more than '2' distinct characters is "araa".
 
 
-def longestSubstrWithKChar(s,k):
+def length_of_longest_substring_k_distinct(self, s: str, k: int) -> int:
+    char_set = {}
+    win_start = 0
+    max_len = 0
+    for win_end in range(len(s)):
+        end_char = s[win_end]
+        char_set[end_char] = 1 + char_set.get(end_char,0)
+        while len(char_set) > k:
+            start_char = s[win_start]
+            char_set[start_char] -= 1
+            if char_set[start_char] == 0:
+                del char_set[start_char]
+            win_start += 1
+        max_len = max(max_len , win_end-win_start+1)
+        
+    return max_len
+
+def attempt2(s,k):
+    #! NOT WORKING 
     charSet = set()
     res = 0
     l = 0
@@ -22,10 +40,4 @@ def longestSubstrWithKChar(s,k):
     print(res)
 
 
-
-
-inp="araaci"
-k=2
-
-longestSubstrWithKChar("cbbebi", 3)
 
