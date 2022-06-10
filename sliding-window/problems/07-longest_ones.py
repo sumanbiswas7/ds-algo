@@ -1,9 +1,25 @@
 # Longest Subarray with Ones after Replacement 
-
 # Input: Array=[0, 1, 1, 0, 0, 0, 1, 1, 0, 1, 1], k=2
 # Output: 6
 
+# Optimal
 def longestOnes(nums, k):
+    oneCount = 0
+    res = 0
+    start = 0
+    for end in range(len(nums)):
+        if nums[end] == 1: oneCount += 1
+        
+        while (end-start+1) - oneCount > k:
+            if nums[start] == 1: oneCount -= 1
+            start += 1
+        
+        res = max(res , (end-start+1))
+        
+    return res
+
+# Naive
+def longestOnes2(nums, k):
     char_count = {}
     win_start = 0
     max_len = 0
@@ -25,21 +41,3 @@ def longestOnes(nums, k):
 
 longestOnes([0,0,1,1,0,0,1,1,1,0,1,1,0,0,0,1,1,1,1], 3)
 
-#  EASY
-def findMaxConsecutiveOnes(nums):
-    win_start = 0
-    max_len = 0
-    
-    for win_end in range(len(nums)):
-        
-        if nums[win_end] == 0:
-            while nums[win_start] != 1:
-                print(win_start)
-                win_start += 1
-            
-        max_len = max(win_end - win_start + 2, max_len)
-
-    print(max_len)
-    return max_len
-            
-findMaxConsecutiveOnes([1,1,0,1,1,1])
