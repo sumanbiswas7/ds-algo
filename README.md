@@ -18,7 +18,7 @@ understand coding problem patterns to build a good base on solving problems. all
 | --- | ---------- | --------------------------------------------------------------------------- |
 | 01  | Easy       | [Two sum ](#two-sum)                                                        |
 | 02  | Easy       | [Remove duplicates from sorted array](#remove-duplicates-from-sorted-array) |
-| 03  | Easy       | [Squaring a Sorted Array](#squaring-a-sorted-array)                         |
+| 03  | Medium     | [Squaring a Sorted Array](#squaring-a-sorted-array)                         |
 | 04  | Medium     | [Three sum](#three-sum)                                                     |
 | 05  | Medium     | [Three sum closest](#three-sum-closest)                                     |
 | 06  | Medium     | [Three sum smaller](#three-sum-smaller)                                     |
@@ -347,7 +347,27 @@ def removeDuplicates(nums):
 
 [Problem Link](https://leetcode.com/problems/squares-of-a-sorted-array/) <br/>
 Question : Given a sorted array, create a new array containing squares of all the number of the input array in the sorted order.<br/>
-Solution : Will be updated
+Solution : We’ll initiate one pointer at the start `left = 0` and one at the end `right = len(nums)-1`. We’ll compare squares of the values present on those indexes and append the greater value in the result. After doing this operation while (left <= right) times we’ll get a non-increasing result array we’ll just have to reverse it. Note: if we do `while < right` rather that `left <= right` the middle value won’t be covered.
+
+```python
+def squareArr(nums):
+    l , r = 0 , len(nums) - 1
+    res = []
+
+    while l <= r:
+        leftSquare = nums[l] * nums[l]
+        rightSquare = nums[r] * nums[r]
+
+        if leftSquare > rightSquare:
+            res.append(leftSquare)
+            l += 1
+        else:
+            res.append(rightSquare)
+            r -= 1
+
+    res.reverse()
+    print(squares)
+```
 
 <br/>**[⬆ Back to Top](#table-of-contents)**
 
@@ -355,7 +375,32 @@ Solution : Will be updated
 
 [Problem Link](https://leetcode.com/problems/3sum/) <br/>
 Question : Given an integer array nums, return all the triplets that sums to zero.<br/>
-Solution : Will be updated
+Solution : This problem is pretty much the same as the two-sum. First of all, we’ll sort the given array. Then by looping, we’ll fix our first element and for the second and third elements, we’ll use the two-pointer-sorted approach.
+
+```python
+def threeSum(nums):
+    res = []
+    nums.sort()
+
+    for i in range(len(nums)):
+        if i != 0 and nums[i] == nums[i-1]: continue # Note-1
+
+        l , r = i + 1 , len(nums)-1
+        while l < r:
+            threeSum = nums[i] + nums[l] + nums[r]
+            if threeSum > 0:
+                r -= 1
+            elif threeSum < 0:
+                l += 1
+            else:
+                res.append([nums[i],nums[l],nums[r]])
+                l += 1
+                while nums[l] == nums[l-1] and l < r: l+= 1 # Note-2
+    return res
+```
+
+`Note-1` : If ith value and the previous value are the same we'll get the same third element thus duplicate triplets will be generated. <br/>
+`Note-2` : After doing l += 1 if lth value and the previous value are the same duplicate triplets will be generated.
 
 <br/>**[⬆ Back to Top](#table-of-contents)**
 
