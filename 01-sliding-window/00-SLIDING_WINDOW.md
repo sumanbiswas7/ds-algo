@@ -1,5 +1,6 @@
 # Sliding Window
 
+Whenever we are asked to find or calculate something among all the contiguous subarrays (or subarrays) of a given size (or maybe not) sliding window comes in handy. We’ll consider a window and depending on the condition we’ll shrink or increment the window.
 
 ## Table of contents
 

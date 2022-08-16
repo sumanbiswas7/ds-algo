@@ -1,5 +1,7 @@
 # Two Pointers
 
+In problems where we deal with sorted arrays (or LinkedList) and need to find a set of elements that fulfill certain constraints, the Two Pointers approach becomes quite useful. Usually, we’ll start with one pointer at the start and one at the end, and depending on the condition we’ll increment the start or decrement the end pointer.
+
 ## Table of contents
 
 | No  | Difficulty | `Two Pointers`                                                              |
