@@ -6,7 +6,7 @@ In problems where we deal with sorted arrays (or LinkedList) and need to find a 
 
 | No  | Difficulty | `Two Pointers`                                                              |
 | --- | ---------- | --------------------------------------------------------------------------- |
-| 01  | Easy       | [Two sum ](#two-sum)                                                        |
+| 01  | Easy       | [Two sum sorted](#two-sum-sorted)                                           |
 | 02  | Easy       | [Remove duplicates from sorted array](#remove-duplicates-from-sorted-array) |
 | 03  | Medium     | [Squaring a Sorted Array](#squaring-a-sorted-array)                         |
 | 04  | Medium     | [Three sum](#three-sum)                                                     |
@@ -16,10 +16,10 @@ In problems where we deal with sorted arrays (or LinkedList) and need to find a 
 
 ## Answers
 
-### Two sum
+### Two sum sorted
 
 [Problem Link](https://leetcode.com/problems/two-sum/) <br/>
-Question : Probably you’ve solved thr infamous Two sum problem it already except here the given array is sorted.<br/>
+Question : Probably you’ve solved the infamous Two sum problem already, except here the given array is sorted.<br/>
 Solution : Since the array is sorted we could use a more optimal approach. we'll create two pointers one at the start of the array and one at the end of the array and we’ll take the sum of them `arr[left] + arr[right]` if the sum is > required sum we’ll decrement the right pointer if it’s < required sum we’ll increment the left pointer or if we get the required sum we’ll return
 
 ```python
@@ -146,7 +146,29 @@ def threeSum(nums):
 
 [Problem Link](https://leetcode.com/problems/3sum-closest/) <br/>
 Question : Given an integer array nums of length n and an integer target, find three integers in nums such that the sum is closest to target.<br/>
-Solution : Will be updated
+Solution : Similar to the three-sum problem we’ll sort the given array first. Then we’ll use the two-pointers approach, we’ll see if the current sum difference `currentThreeSum - targetSum` is lesser than the previous difference only then we’ll update the res and difference.
+
+```python
+def threeSumClosest(nums: List[int], target: int):
+    nums.sort()
+    res, diff = 0, sys.maxsize
+
+    for i in range(len(nums)-2):
+        l, r = i+1, len(nums)-1
+
+        while l < r:
+            threeSum = nums[i] + nums[l] + nums[r]
+            currDiff = abs(target - threeSum)
+
+            if currDiff < diff:
+                res = nums[i]+nums[l]+nums[r]
+                diff = currDiff
+
+            if threeSum < target: l += 1
+            else: r -= 1
+
+    return res
+```
 
 <br/>**[⬆ Back to Top](#table-of-contents)**
 
@@ -154,7 +176,40 @@ Solution : Will be updated
 
 [Problem Link](https://leetcode.com/problems/3sum-smaller/) <br/>
 Question : Given an array arr of unsorted numbers and a target sum, count all triplets in it such that arr[i] + arr[j] + arr[k] < target.<br/>
-Solution : Will be updated
+Solution : In this problem, the gotcha is incrementing the result_length.
+
+```python
+input_array = [-3, 2, 1, 7]
+target = 6
+
+after sorting -> [-3, 1, 2, 7]
+
+let's say i = 0, l = 1, r = 3
+threeSum = 5
+we could'nt only add 1 in result since there are (r-l) number
+of triplets with sum < target so we'll do
+result += r-l
+```
+
+Full Solution :
+
+```python
+def three_sum_smaller(nums, target):
+    res_len = 0
+    nums.sort()
+    for i in range(len(nums)-2):
+        l , r = i+1, len(nums)-1
+
+        while l < r:
+            threeSum = nums[i] + nums[l] + nums[r]
+            if threeSum >= target:
+                r -= 1
+            else:
+                res_len += r-l
+                l += 1
+
+    return res_len
+```
 
 <br/>**[⬆ Back to Top](#table-of-contents)**
 
@@ -162,6 +217,27 @@ Solution : Will be updated
 
 [Problem Link](https://leetcode.com/problems/sort-colors/) <br/>
 Question : Given an array containing 0s, 1s and 2s, sort the array in-place. You should treat numbers of the array as objects, hence, we can’t count 0s, 1s, and 2s to recreate the array.<br/>
-Solution : Will be updated
+Solution : We’ll use three-pointers low and mid at the start and high at the end. We’ll increment the mid-pointer till it collapses with the high pointer.<br/>
+If `nums[mid]` is equals 0 we’ll swap it with low element and increment low and mid </br>
+If `nums[mid]` is equals 1 we’ll just increment the mid-pointer <br/>
+If `nums[mid]` is equals 2 we’ll swap it with high element and decrement high-pointer
+
+```python
+def sortColors(self, nums: List[int]) -> None:
+    low, mid, high = 0, 0, len(nums)-1
+    while mid <= high:
+        if nums[mid] == 0:
+            nums[mid] = nums[low]
+            nums[low] = 0
+            low += 1
+            mid += 1
+        elif nums[mid] == 1:
+            mid += 1
+        else:
+            nums[mid] = nums[high]
+            nums[high] = 2
+            high -= 1
+    return nums
+```
 
 <br/>**[⬆ Back to Top](#table-of-contents)**

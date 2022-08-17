@@ -5,9 +5,7 @@
 def triplateWithSmallerSum(nums,target):
     nums.sort()
     res = 0
-    for i in range(len(nums)):
-        if i > 0 and nums[i] == nums[i-1]: continue
-
+    for i in range(len(nums)-2):
         l , r = i + 1 , len(nums) - 1
         while l < r:
             threeSum = nums[i] + nums[l] + nums[r]
@@ -21,5 +19,11 @@ def triplateWithSmallerSum(nums,target):
     print(res)
 
 # triplateWithSmallerSum([-1,0,2,3], 3)
-triplateWithSmallerSum([-2 ,0 ,1 ,3], 2)
+triplateWithSmallerSum([-2 ,0 ,1 ,3], 5)
+
+# -2,0,1,2,3
+# i = 1 = 0
+# j = 3 = 3
+# target = 5
+
 
