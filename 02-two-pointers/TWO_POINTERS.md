@@ -19,7 +19,7 @@ In problems where we deal with sorted arrays (or LinkedList) and need to find a 
 ### Two sum sorted
 
 [Problem Link](https://leetcode.com/problems/two-sum/) <br/>
-Question : Probably you’ve solved the infamous Two sum problem already, except here the given array is sorted.<br/>
+Question : Probably you’ve solved the Two sum problem already, except here the given array is sorted.<br/>
 Solution : Since the array is sorted we could use a more optimal approach. we'll create two pointers one at the start of the array and one at the end of the array and we’ll take the sum of them `arr[left] + arr[right]` if the sum is > required sum we’ll decrement the right pointer if it’s < required sum we’ll increment the left pointer or if we get the required sum we’ll return
 
 ```python
