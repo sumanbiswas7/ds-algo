@@ -24,7 +24,7 @@ understand coding problem patterns to build a good base on solving problems. all
 | 06  | Medium     | [Three sum smaller](02-two-pointers/TWO_POINTERS.md)                   |
 | 07  | Medium     | [Dutch national flag problem](02-two-pointers/TWO_POINTERS.md)         |
 
-| No  | Difficulty | Sliding Window                                        |
+| No  | Difficulty | `Hashing`                                             |
 | --- | ---------- | ----------------------------------------------------- |
 | 01  | Easy       | [Contains Duplicate](03-hashing/HASHING.md)           |
 | 02  | Easy       | [Two Sum](03-hashing/HASHING.md)                      |
