@@ -24,6 +24,17 @@ understand coding problem patterns to build a good base on solving problems. all
 | 06  | Medium     | [Three sum smaller](02-two-pointers/TWO_POINTERS.md)                   |
 | 07  | Medium     | [Dutch national flag problem](02-two-pointers/TWO_POINTERS.md)         |
 
+| No  | Difficulty | Sliding Window                                        |
+| --- | ---------- | ----------------------------------------------------- |
+| 01  | Easy       | [Contains Duplicate](03-hashing/HASHING.md)           |
+| 02  | Easy       | [Two Sum](03-hashing/HASHING.md)                      |
+| 03  | Easy       | [Valid Anagram](03-hashing/HASHING.md)                |
+| 04  | Medium     | [Group Anagrams](03-hashing/HASHING.md)               |
+| 05  | Medium     | [Top k frequent elements](03-hashing/HASHING.md)      |
+| 06  | Medium     | [Product of array expect self](03-hashing/HASHING.md) |
+| 07  | Medium     | [Valid soduku](03-hashing/HASHING.md)                 |
+| 08  | Medium     | [Encode and decode strings](03-hashing/HASHING.md)    |
+
 ## Explanation and Solutions
 
-[`Sliding Window`](01-sliding-window/SLIDING_WINDOW.md) [`Two Pointers`](02-two-pointers/TWO_POINTERS.md)
+[`Sliding Window`](01-sliding-window/SLIDING_WINDOW.md) [`Two Pointers`](02-two-pointers/TWO_POINTERS.md) [`Hashing`](03-hashing/HASHING.md)
