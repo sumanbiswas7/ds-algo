@@ -1,6 +1,7 @@
 # Algorithms Interview
 
-understand coding problem patterns to build a good base on solving problems. all answers are in python but if you get the idea you can implement these in any language and clinch your tech interview :)
+understand coding problem patterns to build a good base on solving problems. all answers are in python but if you get the idea you can implement these in any language and clinch your tech interview :) <br/>
+Note : You are not expected to understand all of these problems just by reading the given explanation. You could use these as a hint or you could use these as revision material.
 
 ## Table of contents
 
@@ -33,7 +34,6 @@ understand coding problem patterns to build a good base on solving problems. all
 | 05  | Medium     | [Top k frequent elements](03-hashing/HASHING.md)      |
 | 06  | Medium     | [Product of array expect self](03-hashing/HASHING.md) |
 | 07  | Medium     | [Valid soduku](03-hashing/HASHING.md)                 |
-| 08  | Medium     | [Encode and decode strings](03-hashing/HASHING.md)    |
 
 ## Explanation and Solutions
 
