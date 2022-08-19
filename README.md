@@ -35,6 +35,13 @@ Note : You are not expected to understand all of these problems just by reading 
 | 06  | Medium     | [Product of array expect self](03-hashing/HASHING.md) |
 | 07  | Medium     | [Valid soduku](03-hashing/HASHING.md)                 |
 
+| No  | Difficulty | `Fast slow pointers`                                                     |
+| --- | ---------- | ------------------------------------------------------------------------ |
+| 01  | Easy       | [Linked list cycle](04-fast_slow_pointers/FAST_SLOW_POINTERS.md)         |
+| 02  | Medium     | [Linked list cycle II](04-fast_slow_pointers/FAST_SLOW_POINTERS.md)      |
+| 03  | Easy       | [Middle of the linked list](04-fast_slow_pointers/FAST_SLOW_POINTERS.md) |
+| 04  | Easy       | [Happy number](04-fast_slow_pointers/FAST_SLOW_POINTERS.md)              |
+
 ## Explanation and Solutions
 
-[`Sliding Window`](01-sliding-window/SLIDING_WINDOW.md) [`Two Pointers`](02-two-pointers/TWO_POINTERS.md) [`Hashing`](03-hashing/HASHING.md)
+[`Sliding Window`](01-sliding-window/SLIDING_WINDOW.md) [`Two Pointers`](02-two-pointers/TWO_POINTERS.md) [`Hashing`](03-hashing/HASHING.md)[`Fast slow pointers`](04-fast_slow_pointers/FAST_SLOW_POINTERS.md)
