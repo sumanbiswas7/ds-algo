@@ -44,4 +44,4 @@ Note : You are not expected to understand all of these problems just by reading 
 
 ## Explanation and Solutions
 
-[`Sliding Window`](01-sliding-window/SLIDING_WINDOW.md) [`Two Pointers`](02-two-pointers/TWO_POINTERS.md) [`Hashing`](03-hashing/HASHING.md)[`Fast slow pointers`](04-fast_slow_pointers/FAST_SLOW_POINTERS.md)
+[`Sliding Window`](01-sliding-window/SLIDING_WINDOW.md) [`Two Pointers`](02-two-pointers/TWO_POINTERS.md) [`Hashing`](03-hashing/HASHING.md) [`Fast slow pointers`](04-fast_slow_pointers/FAST_SLOW_POINTERS.md)
