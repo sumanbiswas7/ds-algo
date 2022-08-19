@@ -37,11 +37,11 @@ Note : You are not expected to understand all of these problems just by reading 
 
 | No  | Difficulty | `Fast slow pointers`                                                     |
 | --- | ---------- | ------------------------------------------------------------------------ |
-| 01  | Easy       | [Linked list cycle](04-fast_slow_pointers/FAST_SLOW_POINTERS.md)         |
-| 02  | Medium     | [Linked list cycle II](04-fast_slow_pointers/FAST_SLOW_POINTERS.md)      |
-| 03  | Easy       | [Middle of the linked list](04-fast_slow_pointers/FAST_SLOW_POINTERS.md) |
-| 04  | Easy       | [Happy number](04-fast_slow_pointers/FAST_SLOW_POINTERS.md)              |
+| 01  | Easy       | [Linked list cycle](04-fast_slow-pointers/FAST_SLOW_POINTERS.md)         |
+| 02  | Medium     | [Linked list cycle II](04-fast_slow-pointers/FAST_SLOW_POINTERS.md)      |
+| 03  | Easy       | [Middle of the linked list](04-fast_slow-pointers/FAST_SLOW_POINTERS.md) |
+| 04  | Easy       | [Happy number](04-fast_slow-pointers/FAST_SLOW_POINTERS.md)              |
 
 ## Explanation and Solutions
 
-[`Sliding Window`](01-sliding-window/SLIDING_WINDOW.md) [`Two Pointers`](02-two-pointers/TWO_POINTERS.md) [`Hashing`](03-hashing/HASHING.md) [`Fast slow pointers`](04-fast_slow_pointers/FAST_SLOW_POINTERS.md)
+[`Sliding Window`](01-sliding-window/SLIDING_WINDOW.md) [`Two Pointers`](02-two-pointers/TWO_POINTERS.md) [`Hashing`](03-hashing/HASHING.md) [`Fast slow pointers`](04-fast_slow-pointers/FAST_SLOW_POINTERS.md)
