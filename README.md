@@ -42,6 +42,13 @@ Note : You are not expected to understand all of these problems just by reading 
 | 03  | Easy       | [Middle of the linked list](04-fast_slow-pointers/FAST_SLOW_POINTERS.md) |
 | 04  | Easy       | [Happy number](04-fast_slow-pointers/FAST_SLOW_POINTERS.md)              |
 
+| No  | Difficulty | `Merge intervals`                                     |
+| --- | ---------- | ----------------------------------------------------- |
+| 01  | Medium     | [Merge intervals](#merge-intervals)                   |
+| 02  | Medium     | [Insert intervals](#insert-intervals)                 |
+| 03  | Medium     | [Intervals intersection](#intervals-intersection)     |
+| 04  | Medium     | [Conflicting appointments](#conflicting-appointments) |
+
 ## Explanation and Solutions
 
-[`Sliding Window`](01-sliding-window/SLIDING_WINDOW.md) [`Two Pointers`](02-two-pointers/TWO_POINTERS.md) [`Hashing`](03-hashing/HASHING.md) [`Fast slow pointers`](04-fast_slow-pointers/FAST_SLOW_POINTERS.md)
+[`Sliding Window`](01-sliding-window/SLIDING_WINDOW.md) [`Two Pointers`](02-two-pointers/TWO_POINTERS.md) [`Hashing`](03-hashing/HASHING.md) [`Fast slow pointers`](04-fast_slow-pointers/FAST_SLOW_POINTERS.md) [`Merge intervals`](05-merge-intervals/MERGE_INTERVALS.md)

@@ -59,6 +59,7 @@ def middleNode(head):
 [Problem Link](https://leetcode.com/problems/linked-list-cycle-ii/) <br/>
 Question : Given the head of a linked list, return the node where the cycle begins. If there is no cycle, return null.<br/>
 Solution : After finding the collision point like before we’ll move fast pointer and entry pointer [initialized as head] by one and the point of their collision will be the answer.
+</br>
 
 ```python
 def detectCycle(head):
@@ -75,6 +76,8 @@ def detectCycle(head):
 
     return None
 ```
+
+<img src="assets/02-linked-list-cycle-II.jpg" width="450px"/>
 
 <br/>**[⬆ Back to Top](#table-of-contents)**
 
