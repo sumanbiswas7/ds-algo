@@ -49,13 +49,13 @@ Note : You are not expected to understand all of these problems just by reading 
 | 03  | Medium     | [Intervals intersection](05-merge-intervals/MERGE_INTERVALS.md)   |
 | 04  | Medium     | [Conflicting appointments](05-merge-intervals/MERGE_INTERVALS.md) |
 
-| No  | Difficulty | `Cyclic sort`                                           |
-| --- | ---------- | ------------------------------------------------------- |
-| 01  | Easy       | [Cyclic sort](#cyclic-sort)                             |
-| 02  | Easy       | [Find the missing number](#find-the-missing-number)     |
-| 03  | Easy       | [Find all missing number](#find-all-missing-number)     |
-| 04  | Easy       | [Find the duplicate number](#find-the-duplicate-number) |
-| 05  | Easy       | [Find all duplicate number](#find-all-duplicate-number) |
+| No  | Difficulty | `Cyclic sort`                                              |
+| --- | ---------- | ---------------------------------------------------------- |
+| 01  | Easy       | [Cyclic sort](#cyclic-sort)                                |
+| 02  | Easy       | [Find the missing number](06-cyclic-sort/CYCLIC_SORT.md)   |
+| 03  | Easy       | [Find all missing number](06-cyclic-sort/CYCLIC_SORT.md)   |
+| 04  | Easy       | [Find the duplicate number](06-cyclic-sort/CYCLIC_SORT.md) |
+| 05  | Easy       | [Find all duplicate number](06-cyclic-sort/CYCLIC_SORT.md) |
 
 ## Explanation and Solutions
 
