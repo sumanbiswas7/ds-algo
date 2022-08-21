@@ -42,12 +42,12 @@ Note : You are not expected to understand all of these problems just by reading 
 | 03  | Easy       | [Middle of the linked list](04-fast_slow-pointers/FAST_SLOW_POINTERS.md) |
 | 04  | Easy       | [Happy number](04-fast_slow-pointers/FAST_SLOW_POINTERS.md)              |
 
-| No  | Difficulty | `Merge intervals`                                     |
-| --- | ---------- | ----------------------------------------------------- |
-| 01  | Medium     | [Merge intervals](#merge-intervals)                   |
-| 02  | Medium     | [Insert intervals](#insert-intervals)                 |
-| 03  | Medium     | [Intervals intersection](#intervals-intersection)     |
-| 04  | Medium     | [Conflicting appointments](#conflicting-appointments) |
+| No  | Difficulty | `Merge intervals`                                                 |
+| --- | ---------- | ----------------------------------------------------------------- |
+| 01  | Medium     | [Merge intervals](05-merge-intervals/MERGE_INTERVALS.md)          |
+| 02  | Medium     | [Insert intervals](05-merge-intervals/MERGE_INTERVALS.md)         |
+| 03  | Medium     | [Intervals intersection](05-merge-intervals/MERGE_INTERVALS.md)   |
+| 04  | Medium     | [Conflicting appointments](05-merge-intervals/MERGE_INTERVALS.md) |
 
 ## Explanation and Solutions
 
