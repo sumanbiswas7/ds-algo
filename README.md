@@ -49,6 +49,14 @@ Note : You are not expected to understand all of these problems just by reading 
 | 03  | Medium     | [Intervals intersection](05-merge-intervals/MERGE_INTERVALS.md)   |
 | 04  | Medium     | [Conflicting appointments](05-merge-intervals/MERGE_INTERVALS.md) |
 
+| No  | Difficulty | `Cyclic sort`                                           |
+| --- | ---------- | ------------------------------------------------------- |
+| 01  | Easy       | [Cyclic sort](#cyclic-sort)                             |
+| 02  | Easy       | [Find the missing number](#find-the-missing-number)     |
+| 03  | Easy       | [Find all missing number](#find-all-missing-number)     |
+| 04  | Easy       | [Find the duplicate number](#find-the-duplicate-number) |
+| 05  | Easy       | [Find all duplicate number](#find-all-duplicate-number) |
+
 ## Explanation and Solutions
 
-[`Sliding Window`](01-sliding-window/SLIDING_WINDOW.md) [`Two Pointers`](02-two-pointers/TWO_POINTERS.md) [`Hashing`](03-hashing/HASHING.md) [`Fast slow pointers`](04-fast_slow-pointers/FAST_SLOW_POINTERS.md) [`Merge intervals`](05-merge-intervals/MERGE_INTERVALS.md)
+[`Sliding Window`](01-sliding-window/SLIDING_WINDOW.md) [`Two Pointers`](02-two-pointers/TWO_POINTERS.md) [`Hashing`](03-hashing/HASHING.md) [`Fast slow pointers`](04-fast_slow-pointers/FAST_SLOW_POINTERS.md) [`Merge intervals`](05-merge-intervals/MERGE_INTERVALS.md) [`Cyclic sort`](06-cyclic-sort/CYCLIC_SORT.md)
