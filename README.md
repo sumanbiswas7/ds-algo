@@ -6,7 +6,8 @@ understand coding problem patterns to build a good base on solving problems. all
 
 ## Patterns and Solutions
 
-[`Hashing`](01-hashing/HASHING.md) [`Sliding Window`](02-sliding-window/SLIDING_WINDOW.md) [`Two Pointers`](03-two-pointers/TWO_POINTERS.md) [`Fast slow pointers`](04-fast_slow-pointers/FAST_SLOW_POINTERS.md) [`Merge intervals`](05-merge-intervals/MERGE_INTERVALS.md) [`Cyclic sort`](06-cyclic-sort/CYCLIC_SORT.md) [`Inplace reversal of a linkedlist`](07-inplace-reversal-linkedlist/INPLACE_REVERSAL_LINKEDLIST.md)
+[`Hashing`](01-hashing/HASHING.md) [`Sliding Window`](02-sliding-window/SLIDING_WINDOW.md) [`Two Pointers`](03-two-pointers/TWO_POINTERS.md) [`Fast slow pointers`](04-fast_slow-pointers/FAST_SLOW_POINTERS.md) [`Merge intervals`](05-merge-intervals/MERGE_INTERVALS.md) [`Cyclic sort`](06-cyclic-sort/CYCLIC_SORT.md) <br/>
+[`Inplace reversal of a linkedlist`](07-inplace-reversal-linkedlist/INPLACE_REVERSAL_LINKEDLIST.md)
 
 ## Table of contents
 
