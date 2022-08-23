@@ -1,7 +1,8 @@
 # Algorithms Interview
 
 understand coding problem patterns to build a good base on solving problems. all answers are in python but if you get the idea you can implement these in any language and clinch your tech interview :) <br/>
-Note : You are not expected to understand all of these problems just by reading the given explanation. You could use these as a hint or you could use these as revision material.
+
+> **Note** : You are not expected to understand all of these problems just by reading the given explanation. You could use these as a hint or you could use these as revision material.
 
 ## Explanation and Solutions
 
