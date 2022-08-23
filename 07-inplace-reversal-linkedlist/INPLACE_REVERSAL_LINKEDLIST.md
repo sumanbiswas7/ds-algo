@@ -38,9 +38,42 @@ def reverse(head):
 
 ### Reverse a sublist
 
-[Problem Link]() <br/>
+[Problem Link](https://leetcode.com/problems/reverse-linked-list-ii/) <br/>
 Question : Given the head of a LinkedList and two positions ‘p’ and ‘q’, reverse the LinkedList from position ‘p’ to ‘q’. <br/>
-Solution : Coming soon !
+Solution : The problem follows the In-place Reversal of a LinkedList pattern. We can use a similar approach as discussed in Reverse a LinkedList. Here are the steps we need to follow:
+
+> 1 : Skip the first p-1 nodes, to reach the node at position p.</br>
+> 2 : Remember the node at position p-1 to be used later to connect with the reversed sub-list.</br>
+> 3 : Next, reverse the nodes from p to q using the same approach discussed in Reverse a LinkedList.</br>
+> 4 : Connect the p-1 and q+1 nodes to the reversed sub-list.
+
+<img src="assets/problem-02.png" width="450px"/> <br/>
+
+> **Note** : This problem needs visual representation, to understand it fully you should watch this [video](https://www.youtube.com/watch?v=RF_M9tX4Eag).
+
+```python
+def reverse_between(head, left, right):
+    dummy = ListNode(0, head)
+
+    # 1) reach node at position left
+    leftPrev, curr = dummy, head
+    for i in range (left-1):
+        curr, leftPrev = curr.next, curr
+    prev = None
+
+    # Now curr = left, prevLeft = node before left
+    # 2) Reverse from left to right
+    for i in range (right-left+1):
+        tmpNext = curr.next
+        curr.next, prev = prev, curr
+        curr = tmpNext
+
+    # 3) Update positions
+    leftPrev.next.next = curr # curr is node after right
+    leftPrev.next = prev # prev is right
+
+    return dummy.next
+```
 
 <br/>**[⬆ Back to Top](#table-of-contents)**
 
