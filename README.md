@@ -51,7 +51,7 @@ Note : You are not expected to understand all of these problems just by reading 
 
 | No  | Difficulty | `Cyclic sort`                                              |
 | --- | ---------- | ---------------------------------------------------------- |
-| 01  | Easy       | [Cyclic sort](#cyclic-sort)                                |
+| 01  | Easy       | [Cyclic sort](06-cyclic-sort/CYCLIC_SORT.md)               |
 | 02  | Easy       | [Find the missing number](06-cyclic-sort/CYCLIC_SORT.md)   |
 | 03  | Easy       | [Find all missing number](06-cyclic-sort/CYCLIC_SORT.md)   |
 | 04  | Easy       | [Find the duplicate number](06-cyclic-sort/CYCLIC_SORT.md) |
