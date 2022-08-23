@@ -4,7 +4,7 @@ understand coding problem patterns to build a good base on solving problems. all
 
 > **Note** : You are not expected to understand all of these problems just by reading the given explanation. You could use these as a hint or you could use these as revision material.
 
-## Explanation and Solutions
+## Patterns and Solutions
 
 [`Hashing`](01-hashing/HASHING.md) [`Sliding Window`](02-sliding-window/SLIDING_WINDOW.md) [`Two Pointers`](03-two-pointers/TWO_POINTERS.md) [`Fast slow pointers`](04-fast_slow-pointers/FAST_SLOW_POINTERS.md) [`Merge intervals`](05-merge-intervals/MERGE_INTERVALS.md) [`Cyclic sort`](06-cyclic-sort/CYCLIC_SORT.md)
 
