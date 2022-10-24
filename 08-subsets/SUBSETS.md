@@ -32,4 +32,25 @@ def subsets(nums):
     return subsets
 ```
 
+Solution 2: With a current output array we'll maintain `i` variable which will indicate our current number in nums array. for each `nums[i]` we can either add it to current output or we don't add it.
+
+<img src="assets/problem-01.2.png" width="450px"/> <br/>
+
+```python
+def subsets(nums):
+
+    res = []
+    def backtrack(out, i):
+        if i == len(nums): return res.append(out.copy())
+
+        out.append(nums[i])
+        backtrack(out, i+1)
+
+        out.pop()
+        backtrack(out, i+1)
+
+    backtrack([], 0)
+    return res
+```
+
 <br/>**[⬆ Back to Top](#table-of-contents)**
