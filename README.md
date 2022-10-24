@@ -8,6 +8,7 @@ understand coding problem patterns to build a good base on solving problems. all
 
 [`Hashing`](01-hashing/HASHING.md) [`Sliding Window`](02-sliding-window/SLIDING_WINDOW.md) [`Two Pointers`](03-two-pointers/TWO_POINTERS.md) [`Fast slow pointers`](04-fast_slow-pointers/FAST_SLOW_POINTERS.md) [`Merge intervals`](05-merge-intervals/MERGE_INTERVALS.md) [`Cyclic sort`](06-cyclic-sort/CYCLIC_SORT.md) <br/>
 [`Inplace reversal of a linkedlist`](07-inplace-reversal-linkedlist/INPLACE_REVERSAL_LINKEDLIST.md)
+[`Subsets`](08-subsets/SUBSETS.md)
 
 ## Table of contents
 
@@ -68,3 +69,8 @@ understand coding problem patterns to build a good base on solving problems. all
 - [Reverse a linkedlist](07-inplace-reversal-linkedlist/INPLACE_REVERSAL_LINKEDLIST.md)
 - [Reverse a sublist](07-inplace-reversal-linkedlist/INPLACE_REVERSAL_LINKEDLIST.md)
 - [Reverse every K-element Sub-list](07-inplace-reversal-linkedlist/INPLACE_REVERSAL_LINKEDLIST.md)
+
+#### Subsets
+
+- [Subsets](08-subsets/SUBSETS.md)
+- [Subsets with duplicates](08-subsets/SUBSETS.md)
