@@ -54,3 +54,54 @@ def subsets(nums):
 ```
 
 <br/>**[⬆ Back to Top](#table-of-contents)**
+
+### Subsets with duplicates
+
+[Problem Link](https://leetcode.com/problems/subsets-ii/) <br/>
+Question : Given an integer array nums that may contain duplicates, return all possible subsets.<br/>
+Solution 1: See below picture how are we going to handle whenever we encounter a duplicate
+
+<img src="assets/problem-02.png" width="450px"/> <br/>
+
+```python
+def subsets2(nums):
+    nums.sort()
+
+    res, prevEnd = [[]], 0
+    for i in range(len(nums)):
+        startIdx = 0
+        if i > 0 and nums[i] == nums[i-1]: startIdx = prevEnd
+
+        prevEnd = len(res)
+        for j in range(startIdx, prevEnd):
+            cur = res[j].copy()
+            cur.append(nums[i])
+            res.append(cur)
+
+    return res
+```
+
+Solution 2: Similar to previous backtracking approach we can either add a number or do not add a number but after adding a number if we get the same number in next index we don't consider it. So while `nums[i] == nums[i+1]` we'll not call `f(out, i+1)`
+
+```python
+def subsetsWithDup(nums):
+     nums.sort()
+
+     res = []
+     def backtrack(out, i):
+         if i == len(nums):return res.append(out.copy())
+
+         out.append(nums[i])
+         backtrack(out, i+1)
+         out.pop()
+
+         j = i
+         while j < len(nums)-1 and nums[j] == nums[j+1]:
+             j += 1
+         backtrack(out, j+1)
+
+     backtrack([], 0)
+     return res
+```
+
+<br/>**[⬆ Back to Top](#table-of-contents)**
